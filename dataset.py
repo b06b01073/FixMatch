@@ -46,7 +46,6 @@ def get_dataset(labeled_batch_size, unlabeled_batch_size, labels_per_class, num_
             unlabeled_indices.append(idx)
 
     labeled_set = Subset(train_set, labeled_indices)
-    labeled_set.dataset.transform = weak_augment()
     labeled_set = DataLoader(labeled_set, batch_size=labeled_batch_size, shuffle=True, num_workers=8)
 
     unlabeled_set = Subset(train_set, unlabeled_indices)

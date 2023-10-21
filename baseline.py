@@ -21,9 +21,7 @@ if __name__ == '__main__':
     
     train_set, test_set = dataset.get_full_dataset(args.batch_size)
 
-    model = ResNet(device=device)
-    model.init_model(args.num_classes)
-
+    model = ResNet(args.num_classes, device)
     loss_fn = nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.net.parameters(), lr=args.lr)
 
