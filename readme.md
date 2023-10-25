@@ -1,6 +1,6 @@
 # FixMatch implementation
 
-> This progress of the training is postponed indefinitely since I'm currently participating a contest.
+> The progress of the training is postponed indefinitely since I'm currently participating a contest.
 
 ## Introduction
 
